@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import Messages from "./Messages"
+import Randomise from "./Randomise"
+import "./style.css"
+import Button from 'react-bootstrap/Button';
+import Jumbotron from 'react-bootstrap/Jumbotron'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+
+const App = () => {
+    return <div>
+        <div class="header"></div>
+             <div class="bg">
+                <div class="jumbotron">
+                 <Jumbotron>
+                    <div className="container" >
+                             <h1 class="messages" id="wrapper">
+                             {Messages()}
+                             </h1>
+                    </div>     
+                 </Jumbotron> 
+                 </div>
+                 <div class="buttons">
+                <Button onClick={Randomise} variant="success">Click for Inspo</Button>
+                </div>
+             </div>
     </div>
-  );
 }
 
-export default App;
+export default App
