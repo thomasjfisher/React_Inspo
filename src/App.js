@@ -21,7 +21,7 @@ const App = () => {
                  </Jumbotron> 
                  </div>
                  <div class="buttons">
-                <Button onClick={Randomise} variant="success">Click for Inspo</Button>
+                <Button onClick={Randomise} variant="success">Inspire Me</Button>
                 </div>
              </div>
     </div>
